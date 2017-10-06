@@ -1,0 +1,64 @@
+body {
+    color: #717171;
+    background-color: #F5F5F5;
+}
+
+.block {
+    padding: 15px;
+    border: 2px;
+    width: 520px;
+    align-self: center;
+    background-color: white;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: #e4e0e1;
+    font-family: "DejaVu Sans Light";
+    font-size: 58px;
+    text-align: center;
+}
+
+.item {
+    border-bottom: 2px;
+    margin: 20px;
+    font-size: medium;
+}
+.item_checked {
+    border-bottom: 2px;
+    margin: 20px;
+    font-size: medium;
+    outline: darkgray;
+
+}
+
+
+hover.item {
+    background-color: #EAEAEA;
+}
+
+.option {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.option_active {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    font-size: small;
+    max-resolution: 5px;
+}
+
+.selected {
+
+}
+
+.adder {
+    font-style: italic;
+}
