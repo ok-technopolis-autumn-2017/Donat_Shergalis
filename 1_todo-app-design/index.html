@@ -10,28 +10,34 @@
 <body>
     <h1>todos</h1>
     <div aria-label="основной блок" class="block">
-        <div class="adder" aria-label="Поле добавления задач" >
-            What needs to be done?</div>
-        <div aria-label="задача" class="item">
-            HTML</div>
-        <div aria-label="задача" class="item_checked">
-            CSS</div>
-        <div aria-label="задача" class="item">
-            JS</div>
-        <div aria-label="задача" class="item">
-            JS tools</div>
+        <div>
+            <button aria-label="Отметить все завершёнными">V</button>
+            <input placeholder="What needs to be done?" class="adder" aria-label="Поле добавления задач" />
+        </div>
+        <div>
+            <input type="checkbox" aria-label="задача" class="item">HTML</input>
+            <button aria-label="Удалить задачу">удалить</button>
+        </div>
+        <div>
+            <input type="checkbox" aria-label="задача" class="item_checked">CSS</input>
+            <button aria-label="Удалить задачу">удалить</button>
+        </div>
+        <div>
+            <input type="checkbox" aria-label="задача" class="item">JS</input>
+            <button aria-label="Удалить задачу">удалить</button>
+        </div>
+        <div>
+            <input type="checkbox" aria-label="задача" class="item">JS tools</input>
+            <button aria-label="Удалить задачу">удалить</button>
+        </div>
         <div aria-label="разделитель" class="item"></div> <!--empty space-->
         <div aria-label="нижняя панель" class="footer">
-            <div aria-label="количество оставшихся задач" class="count">
-                3 items left</div>
-            <div aria-label="нет фильтрации" class="option_active" aria-label="" >
-                All</div>
-            <div aria-label="фильтрация невыполненных" class="option">
-                Active</div>
-            <div aria-label="фильтрация выполненных" class="option">
-                Completed</div>
-         <div aria-label="Очистка выполненных" class="button">
-             Clear completed</div>
+            <div aria-label="количество оставшихся задач" class="count">3 items left</div>
+            <button aria-label="нет фильтрации" class="option_active" aria-label="" >All</button>
+            <button aria-label="фильтрация невыполненных" class="option">Active</button>
+            <button aria-label="фильтрация выполненных" class="option">Completed</button>
+         <button aria-label="Очистка выполненных" class="button">
+             Clear completed</button>
         </div>
     </div>
 </body>

@@ -23,12 +23,10 @@ h1 {
 
 .item {
     border-bottom: 2px;
-    margin: 20px;
     font-size: medium;
 }
 .item_checked {
     border-bottom: 2px;
-    margin: 20px;
     font-size: medium;
     outline: darkgray;
 
