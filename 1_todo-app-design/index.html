@@ -3,42 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>ToDo App</title>
+    <link rel="stylesheet"  href="styles/default.css">
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 
 <body>
-    <h1>todos</h1>
-    <div aria-label="основной блок" class="block">
-        <div class="list-item">
-            <button class="button-complete-all" aria-label="Отметить все завершёнными"></button>
-            <input placeholder="What needs to be done?" class="add_field" aria-label="Поле добавления задач" />
+
+    <div class="todos-main-wrapper">
+
+        <div class="todos-header">
+            <h1 class="todos-title">todos</h1>
         </div>
-        <div class="list-item">
-            <input type="checkbox" aria-label="задача" class="list-item_checkbox">HTML</input>
-            <button class="list-item_deleter" aria-label="Удалить задачу"></button>
-        </div>
-        <div class="list-item">
-            <input type="checkbox" aria-label="задача" class="list-item_checkbox"> CSS</input>
-            <button class="list-item_deleter" aria-label="Удалить задачу"></button>
-        </div>
-        <div class="list-item">
-            <input type="checkbox" aria-label="задача" class="list-item_checkbox">JS</input>
-            <button class="list-item_deleter" aria-label="Удалить задачу"></button>
-        </div>
-        <div class="list-item">
-            <input type="checkbox" aria-label="задача" class="list-item_checkbox">JS tools</input>
-            <button class="list-item_deleter" aria-label="Удалить задачу"></button>
-        </div>
-        <div aria-label="разделитель" class="list-item">&nbsp;</div> <!--empty space-->
-        <div aria-label="нижняя панель" class="footer">
-            <span aria-label="количество оставшихся задач" class="count">3 items left</span>
-            <button aria-label="нет фильтрации" class="filter-option_active" aria-label="" >All</button>
-            <button aria-label="фильтрация невыполненных" class="filter-option">Active</button>
-            <button aria-label="фильтрация выполненных" class="filter-option">Completed</button>
-         <button aria-label="Очистка выполненных" class="clear-button">Clear completed</button>
+
+        <div aria-label="основной блок" class="todos-container">
+            <div class="todos-add">
+                <button class="todos-add_select-all" aria-label="Отметить все завершёнными">
+                    <div class="todos-add_select-all_icon"></div>
+                </button>
+                <div class="todos-add_new-item-w">
+                    <input placeholder="What needs to be done?" class="todos-add_new-item" aria-label="Поле добавления задач" />
+                </div>
+            </div>
+            <div class="todos-list">
+                <div class="todos-item">
+                    <input type="checkbox" aria-label="задача" class="list-item_checkbox">
+                        <span>HTML</span>
+                    </input>
+                    <button class="list-item-deleter" aria-label="Удалить задачу"></button>
+                </div>
+                <div class="todos-item __done">
+                    <input type="checkbox" aria-label="задача" class="list-item_checkbox">
+                        <span>CSS</span>
+                    </input>
+                    <button class="list-item-deleter" aria-label="Удалить задачу"></button>
+                </div>
+                <div class="todos-item">
+                    <input type="checkbox" aria-label="задача" class="list-item_checkbox">
+                        <span>JS</span>
+                    </input>
+                    <button class="list-item-deleter" aria-label="Удалить задачу"></button>
+                </div>
+                <div class="todos-item">
+                    <input type="checkbox" aria-label="задача" class="list-item_checkbox">
+                        <span>JS tools</span>
+                    </input>
+                    <button class="list-item-deleter" aria-label="Удалить задачу"></button>
+                </div>
+            </div>
+            <div aria-label="нижняя панель" class="todos-actions-bar">
+                <div aria-label="количество оставшихся задач" class="todos-counter">3 items left</div>
+                <div class="filter-container">
+                    <button aria-label="нет фильтрации" class="filter-option __active">All</button>
+                    <button aria-label="фильтрация невыполненных" class="filter-option">Active</button>
+                    <button aria-label="фильтрация выполненных" class="filter-option">Completed</button>
+                </div>
+                <button aria-label="Очистка выполненных" class="clear-button">Clear completed</button>
+            </div>
         </div>
     </div>
 </body>
 </html>
 
+<!--
+ * проверить ввод длинных текстов
+ * проверить, что не поедет при локализации (грузинский)
+ * content-editable
+ * для безопасности добавить no-value в поля ввода
+ * заменить изображения на код
+ -->

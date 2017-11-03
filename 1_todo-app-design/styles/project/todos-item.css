@@ -1,0 +1,46 @@
+.todos-item {
+    border-bottom : 2px;
+    font-size     : 17px;
+    margin-bottom : 15px;
+    margin-top    : 15px;
+    outline       : darkgray;
+    }
+
+    .__done {
+        text-decoration: line-through;
+        color: #666666;
+        }
+
+    .todo-item:hover {
+        background-color : #eaeaea;
+        }
+
+
+.list-item-deleter {
+    background : url(../../img/icons/close.png) no-repeat;
+    border     : none;
+    width      : 19px;
+    height     : 19px;
+    horiz-align: right;
+    }
+
+input[type="checkbox"] {
+    margin-left: 10px;
+    opacity: 0;
+    }
+
+    input[class="list-item_checkbox"] {
+        width          : 19px;
+        height         : 19px;
+        margin         : -1px 4px 0 0;
+        vertical-align : middle;
+        background     : url(../../img/icons/completed.png) left top no-repeat;
+        cursor         : pointer;
+        }
+    
+    input[class="list-item_checkbox"]:checked {
+        background : url(../../img/icons/completed.png) left top no-repeat;
+        background : #000000;
+        text-decoration: line-through;
+        }
+    
